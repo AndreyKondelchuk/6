@@ -457,9 +457,24 @@
         </div>
       </div>
     </footer>
+    <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close></button>
+        <form class="form">
+          <b class="title">Оставьте свои данные, мы вам перезвоним</b>
+          <ul class="fields">
+            <li class="field">
+              <label for="user-name">Имя</label>
+              <input
+                class="form-field"
+                type="text"
+                name="name"
+                id="user-name"
+              />
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

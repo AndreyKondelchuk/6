@@ -874,6 +874,9 @@ ul {
   padding: 0;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+  background-image: url(../img/icons/check2.svg);
+  background-position: center;
+  background-size: contain;
 }
 .field-checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);

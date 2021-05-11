@@ -314,8 +314,8 @@ ul {
 }
 .title {
   color: var(--title-text-color);
-  text-transform: uppercase;
 }
+
 .image {
   display: flex;
   justify-content: space-between;
@@ -454,6 +454,11 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+.footer .title {
+  color: var(--background-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .footer-items {
   display: flex;
@@ -624,6 +629,82 @@ ul {
 .join .social-networks:focus {
   background-color: var(--accent-color);
 }
+.footer .form {
+  min-width: 570px;
+  margin-left: 93px;
+}
+.footer .sign-up {
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .form-field {
+  display: flex;
+  padding: 0;
+}
+.footer .form-field input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background-color: #2f303a;
+}
+.footer .form-field input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+
+  color: var(--background-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .button {
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  color: var(--background-color);
+}
+.footer .button::after {
+  width: 24px;
+  height: 24px;
+  display: inline-flexbox;
+  padding-top: 7px;
+  padding-right: 28px;
+
+  margin-left: 10px;
+  content: "";
+  background-image: url(../img/icomoon/SVG/icon-send1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -646,6 +727,14 @@ ul {
   transform: translate(-50%, -50%) scale(1.1);
 }
 /*модальное окно*/
+.title-modal {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -705,7 +794,7 @@ ul {
 .title {
   font-size: 20px;
   margin-bottom: 12px;
-  text-transform: inherit;
+
   position: center;
 }
 .fields {
@@ -760,6 +849,11 @@ ul {
 }
 .checkbox {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 .field-checkbox {
   appearance: none;
@@ -784,28 +878,6 @@ ul {
 .field-checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
-}
-.form .button {
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 200px;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-
-  color: var(--background-color);
-  background-color: var(--accent-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .thumb {

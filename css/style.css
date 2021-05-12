@@ -689,7 +689,7 @@ ul {
 .form {
   max-height: 150px;
 }
-.form .button {
+.form-modal .button {
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
